@@ -11,7 +11,7 @@ func TestDiagnose(t *testing.T) {
 	}{
 		{"word", 1},
 		{"KappaPride Keepo word word word word word", 2},
-		{"CANCER Kappa PRIDE Kappa PogU PogU PogU PogU PogU PogU PogU PogU PogU PogU PogU", 11},
+		{"CANCER Kappa PRIDE Kappa PogU PogU PogU PogU PogU PogU PogU PogU PogU :eggplant:", 10},
 		{"", 3},
 	}
 	for _, c := range cases {
