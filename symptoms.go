@@ -1,7 +1,6 @@
 package cancerigo
 
 import (
-	"sort"
 	"strings"
 	"unicode"
 )
@@ -77,7 +76,7 @@ func capsRatio(p precomputed) (points int) {
 // countEmotes counts emotes in p (based on emotes.txt)
 func countEmotes(p precomputed) (count int) {
 	for _, word := range p.words {
-		if sort.SearchStrings(Emotes[:], word) < EmotesCount {
+		if _, found := Emotes[word]; found {
 			count++
 		}
 	}
