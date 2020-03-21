@@ -15,8 +15,7 @@ Basically, this lib can be summarized by its main function `func Diagnose(messag
 
 ## Dev
 
-Edit [emotes.txt](emotes.txt) and run `go generate`.
-
-Test with `go test`
-
-Benchmark with `go test -test.bench=.`
+- `make test` to run tests.
+- `make bench` to run bencharmks.
+- `make generate` to generate the list of emotes in a go map.
+- `make emotes` to update the list of emotes from remote sources.
